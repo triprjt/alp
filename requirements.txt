@@ -4,60 +4,257 @@
 #
 #    pip-compile requirements.in
 #
-asgiref==3.7.2
-    # via django
+aiohttp==3.8.4
+    # via
+    #   -r requirements.in
+    #   openai
+aiosignal==1.3.1
+    # via
+    #   -r requirements.in
+    #   aiohttp
+alembic==1.9.3
+    # via
+    #   -r requirements.in
+    #   flask-migrate
+argcomplete==2.0.0
+    # via
+    #   -r requirements.in
+    #   pipx
+asgiref==3.5.2
+    # via
+    #   -r requirements.in
+    #   django
+async-timeout==4.0.2
+    # via
+    #   -r requirements.in
+    #   aiohttp
+attrs==23.1.0
+    # via
+    #   -r requirements.in
+    #   aiohttp
 backports-zoneinfo==0.2.1
-    # via django
+    # via -r requirements.in
 beautifulsoup4==4.11.1
     # via -r requirements.in
-distlib==0.3.7
-    # via virtualenv
-django==4.2.1
+black==22.1.0
+    # via -r requirements.in
+brownie==0.5.1
+    # via -r requirements.in
+certifi==2022.12.7
+    # via
+    #   -r requirements.in
+    #   pipenv
+    #   requests
+chardet==3.0.4
+    # via
+    #   -r requirements.in
+    #   requests
+charset-normalizer==3.2.0
+    # via
+    #   -r requirements.in
+    #   aiohttp
+click==8.0.3
+    # via
+    #   -r requirements.in
+    #   black
+    #   flask
+    #   userpath
+distlib==0.3.6
+    # via
+    #   -r requirements.in
+    #   virtualenv
+django==3.2.10
     # via
     #   -r requirements.in
     #   django-cors-headers
-    #   django-storages
     #   djangorestframework
 django-cors-headers==3.10.1
     # via -r requirements.in
-django-storages==1.12.3
-    # via -r requirements.in
 djangorestframework==3.13.0
     # via -r requirements.in
-filelock==3.12.2
-    # via virtualenv
+easygui==0.98.3
+    # via -r requirements.in
+filelock==3.9.0
+    # via
+    #   -r requirements.in
+    #   virtualenv
+flask==2.1.0
+    # via
+    #   -r requirements.in
+    #   flask-cors
+    #   flask-migrate
+    #   flask-script
+    #   flask-sqlalchemy
+flask-cors==3.0.9
+    # via -r requirements.in
+flask-migrate==2.5.3
+    # via -r requirements.in
+flask-script==2.0.6
+    # via -r requirements.in
+flask-sqlalchemy==2.4.4
+    # via
+    #   -r requirements.in
+    #   flask-migrate
+frozenlist==1.4.0
+    # via
+    #   -r requirements.in
+    #   aiohttp
+    #   aiosignal
 gunicorn==20.1.0
     # via -r requirements.in
-numpy==1.24.4
-    # via pandas
+idna==2.10
+    # via
+    #   -r requirements.in
+    #   requests
+    #   yarl
+importlib-metadata==6.0.0
+    # via
+    #   -r requirements.in
+    #   alembic
+    #   flask
+importlib-resources==5.10.2
+    # via
+    #   -r requirements.in
+    #   alembic
+itsdangerous==2.1.2
+    # via
+    #   -r requirements.in
+    #   flask
+jinja2==3.1.2
+    # via
+    #   -r requirements.in
+    #   flask
+mako==1.2.4
+    # via
+    #   -r requirements.in
+    #   alembic
+markupsafe==2.1.2
+    # via
+    #   -r requirements.in
+    #   jinja2
+    #   mako
+    #   werkzeug
+multidict==6.0.4
+    # via
+    #   -r requirements.in
+    #   aiohttp
+    #   yarl
+mypy-extensions==0.4.3
+    # via
+    #   -r requirements.in
+    #   black
+mysqlclient==2.0.1
+    # via -r requirements.in
+numpy==1.24.2
+    # via
+    #   -r requirements.in
+    #   pandas
+openai==0.27.8
+    # via -r requirements.in
+packaging==21.3
+    # via
+    #   -r requirements.in
+    #   pipx
 pandas==2.0.0
     # via -r requirements.in
-platformdirs==2.6.2
-    # via virtualenv
-psycopg2-binary==2.9.6
-    # via -r requirements.in
-python-dateutil==2.8.2
-    # via pandas
-pytz==2023.3
+pathspec==0.9.0
     # via
+    #   -r requirements.in
+    #   black
+pika==1.1.0
+    # via -r requirements.in
+pipenv==2022.12.19
+    # via -r requirements.in
+pipx==1.0.0
+    # via -r requirements.in
+platformdirs==2.5.0
+    # via
+    #   -r requirements.in
+    #   black
+    #   virtualenv
+pyparsing==3.0.7
+    # via
+    #   -r requirements.in
+    #   packaging
+python-dateutil==2.8.2
+    # via
+    #   -r requirements.in
+    #   pandas
+pytz==2021.3
+    # via
+    #   -r requirements.in
+    #   django
     #   djangorestframework
     #   pandas
+requests==2.25.0
+    # via
+    #   -r requirements.in
+    #   openai
 six==1.16.0
-    # via python-dateutil
-soupsieve==2.4.1
-    # via beautifulsoup4
-sqlparse==0.4.4
-    # via django
-typing-extensions==4.7.1
-    # via asgiref
+    # via
+    #   -r requirements.in
+    #   flask-cors
+    #   python-dateutil
+soupsieve==2.3.2.post1
+    # via
+    #   -r requirements.in
+    #   beautifulsoup4
+sqlalchemy==1.3.20
+    # via
+    #   -r requirements.in
+    #   alembic
+    #   flask-sqlalchemy
+sqlparse==0.4.2
+    # via
+    #   -r requirements.in
+    #   django
+tomli==2.0.1
+    # via
+    #   -r requirements.in
+    #   black
+tqdm==4.65.0
+    # via
+    #   -r requirements.in
+    #   openai
+typing-extensions==4.5.0
+    # via
+    #   -r requirements.in
+    #   black
 tzdata==2023.3
-    # via pandas
+    # via
+    #   -r requirements.in
+    #   pandas
 urllib3==1.26.10
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   requests
+userpath==1.8.0
+    # via
+    #   -r requirements.in
+    #   pipx
 virtualenv==20.17.1
+    # via
+    #   -r requirements.in
+    #   pipenv
+virtualenv-clone==0.5.7
+    # via
+    #   -r requirements.in
+    #   pipenv
+werkzeug==2.2.3
+    # via
+    #   -r requirements.in
+    #   flask
+whitenoise==5.3.0
     # via -r requirements.in
-whitenoise==6.2.0
-    # via -r requirements.in
+yarl==1.9.2
+    # via
+    #   -r requirements.in
+    #   aiohttp
+zipp==3.13.0
+    # via
+    #   -r requirements.in
+    #   importlib-metadata
+    #   importlib-resources
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
